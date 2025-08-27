@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROX Whiteboard</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="toolbar">
+        <div class="tool-section">
+            <button id="pencil" class="tool active" title="Pencil">
+                <i class="fas fa-pencil-alt"></i>
+            </button>
+            <button id="eraser" class="tool" title="Eraser">
+                <i class="fas fa-eraser"></i>
+            </button>
+            <button id="text" class="tool" title="Text">
+                <i class="fas fa-font"></i>
+            </button>
+        </div>
+        <div class="tool-section">
+            <input type="color" id="colorPicker" value="#000000">
+            <select id="strokeWidth">
+                <option value="1">1px</option>
+                <option value="3">3px</option>
+                <option value="5" selected>5px</option>
+                <option value="10">10px</option>
+                <option value="15">15px</option>
+            </select>
+        </div>
+        <div class="tool-section">
+            <button id="undo" title="Undo">
+                <i class="fas fa-undo"></i>
+            </button>
+            <button id="redo" title="Redo">
+                <i class="fas fa-redo"></i>
+            </button>
+            <button id="clear" title="Clear All">
+                <i class="fas fa-trash"></i>
+            </button>
+            <button id="save" title="Save">
+                <i class="fas fa-download"></i>
+            </button>
+        </div>
+    </div>
+    <canvas id="whiteboard"></canvas>
+    <script src="js/app.js"></script>
+</body>
+</html>
